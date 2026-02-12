@@ -94,14 +94,16 @@ def make_users():
         role=UserRole.Admin,
     )
     user_team = Team(
-        "user_team",
+        key="user_team",
+        name="user_team",
         display_name="Awesome!",
         members=[user],
         category=DefaultCategory.Participants,
         affiliation=affiliation,
     )
     admin_team = Team(
-        "admin_team",
+        key="admin_team",
+        name="admin_team",
         display_name="Admin",
         members=[admin],
         category=SystemCategory.Jury,
