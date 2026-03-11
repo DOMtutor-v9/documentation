@@ -4,7 +4,7 @@
    At least, you need `problemtools` and `pyjudge`.
  * Create a virtual environment with `python3 -m venv venv` and activate it with `. ./venv/bin/activate`
  * Setting up Kattis problemtools - Inside `problemtools`
-   * `git submodule init --update --recursive`
+   * `git submodule update --init --recursive`
    * `make` (may need `libgmp-dev`, `libboost-dev`) to compile `checktestdata`
    * `pip install -e` to install problemtools into the venv
  * Installing pyjudge in the venv: `cd pyjudge && pip install -e`
